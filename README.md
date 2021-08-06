@@ -24,10 +24,10 @@ Json Request :
 ```json
 {
 	"order":{
-		"id":103,
-		"name":"Mobile",
+		"id":101,
+		"name":"Smart TV",
 		"qty":1,
-		"price":8000
+		"price":22000
 		
 	},
 	"payment":{}
@@ -37,19 +37,19 @@ Json Response :
 json
 {
     "order": {
-        "id": 103,
-        "name": "ear-phone",
-        "qty": 5,
-        "price": 4000
+        "id": 101,
+        "name": "Smart TV",
+        "qty": 1,
+        "price": 22000
     },
-    "amount": 4000,
+    "amount": 22000,
     "transactionId": "9a021fa6-2061-4332-bdb7-b1358b3430c2",
     "message": "payment processing successful and order placed"
 }
 
 ```
 ```bash
-URL : http://localhost:8989/payment/103
+URL : http://localhost:8989/payment/101
 HTTP Method : GET
 ```
 Json Response :
@@ -57,8 +57,8 @@ Json Response :
 {
     "paymentId": 1,
     "transactionId": "d86cfeca-0b26-455e-a1a2-ac3e53707829",
-    "orderId": 103,
+    "orderId": 101,
     "paymentStatus": "SUCCESS",
-    "amount":4000
+    "amount":22000
 }
 ```
