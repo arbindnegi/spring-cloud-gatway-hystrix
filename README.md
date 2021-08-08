@@ -1,3 +1,8 @@
+#Zipkin server startup: its used to centerlized the log and trace the transaction flow from source to destination 
+command use in window cmd prompt: java -jar zipkin-server-2.23.2-exec.jar
+
+ http://127.0.0.1:9411/
+ 
 
 1) Service Registry: http://localhost:8761/
 2) Cloud Gateway : 
